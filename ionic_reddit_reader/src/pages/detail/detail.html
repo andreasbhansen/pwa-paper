@@ -1,0 +1,11 @@
+<ion-header>
+  <ion-navbar color="black">
+    <ion-title>{{post.title}}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content fullscreen class="container">
+  <img class="post-image" [src]="post.preview.images[0].source.url" />
+  <p class="post-author">By {{post.author}}</p>
+</ion-content>

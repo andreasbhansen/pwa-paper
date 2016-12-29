@@ -1,0 +1,32 @@
+page-post-list {
+    ion-card {
+        text-align: center;
+        position: relative;
+    }
+
+    .post-image {
+        height: 230px;
+        border-radius: 3;
+    }
+
+    .post-title-container {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 230px;
+        background-color: rgba(0,0,0,0.6);
+        padding: 10px;
+  }
+
+    .post-title {
+        color: white;
+        font-weight: bold;
+        position: relative;
+        top: 95px;
+        overflow:hidden; 
+        white-space:nowrap; 
+        text-overflow: ellipsis;
+        font-size: 1.3em;
+    }
+
+}

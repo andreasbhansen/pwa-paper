@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Art by Reddit</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content fullscreen>
+  <ion-list no-lines>
+    <button ion-item *ngFor="let post of posts" (click)="goToDetailPage(post)">
+      <ion-card>
+        <div>
+          <img class="post-image" [src]="post.data.preview.images[0].source.url" />
+          <div class="post-title-container">
+            <p class="post-title">{{post.data.title}}</p>
+          </div>
+        </div>
+      </ion-card>
+    </button>
+  </ion-list>
+</ion-content>
